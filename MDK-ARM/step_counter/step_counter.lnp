@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"step_counter\startup_stm32f103xb.o"
+"step_counter\main.o"
+"step_counter\stm32f1xx_it.o"
+"step_counter\stm32f1xx_hal_msp.o"
+"step_counter\stm32f1xx_hal_gpio_ex.o"
+"step_counter\stm32f1xx_hal_i2c.o"
+"step_counter\stm32f1xx_hal.o"
+"step_counter\stm32f1xx_hal_rcc.o"
+"step_counter\stm32f1xx_hal_rcc_ex.o"
+"step_counter\stm32f1xx_hal_gpio.o"
+"step_counter\stm32f1xx_hal_dma.o"
+"step_counter\stm32f1xx_hal_cortex.o"
+"step_counter\stm32f1xx_hal_pwr.o"
+"step_counter\stm32f1xx_hal_flash.o"
+"step_counter\stm32f1xx_hal_flash_ex.o"
+"step_counter\stm32f1xx_hal_exti.o"
+"step_counter\stm32f1xx_hal_tim.o"
+"step_counter\stm32f1xx_hal_tim_ex.o"
+"step_counter\system_stm32f1xx.o"
+--strict --scatter "step_counter\step_counter.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "step_counter.map" -o step_counter\step_counter.axf
