@@ -311,6 +311,7 @@ int main(void)
 			lcd_send_string("Press SW1");	
 			lcd_put_cur(1,4);
 			lcd_send_string("to continue");	
+            HAL_Delay(100);
 			lcd_clear();
 			continue;
 		}
